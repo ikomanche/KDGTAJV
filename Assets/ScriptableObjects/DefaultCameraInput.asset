@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Horizontal: 0
   Vertical: 0
-  HorizontalAxis: 
-  VerticalAxis: 
+  HorizontalAxis: Horizontal
+  VerticalAxis: Mouse X
   HorizontalSpeed: 0
-  VerticalSpeed: 0
+  VerticalSpeed: 300

@@ -16,5 +16,5 @@ MonoBehaviour:
   Vertical: 0
   HorizontalAxis: Horizontal
   VerticalAxis: Vertical
-  HorizontalSpeed: 100
+  HorizontalSpeed: 200
   VerticalSpeed: 10
