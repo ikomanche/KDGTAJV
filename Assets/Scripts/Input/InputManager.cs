@@ -6,7 +6,8 @@ namespace PlayerInput
 {
     public class InputManager : MonoBehaviour
     {
-        [SerializeField ]private PlayerInputData[] _inputDataArray;
+        [SerializeField ]private PlayerInputData[] _inputDataArray;       
+        
         void Update()
         {
             for (int i = 0; i < _inputDataArray.Length; i++)

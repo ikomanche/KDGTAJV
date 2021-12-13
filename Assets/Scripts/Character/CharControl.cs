@@ -8,8 +8,10 @@ namespace PlayerControl
     public class CharControl : MonoBehaviour
     {
         [SerializeField] PlayerInputData _inputData;
-        [SerializeField] Rigidbody _rigidbody;
+        //[SerializeField] Rigidbody _rigidbody;
         [SerializeField] GameObject Player;
+        [SerializeField] GameObject secondCamera;
+        [SerializeField] GameObject mainCamera;
 
 
         void Update()
@@ -20,10 +22,14 @@ namespace PlayerControl
             if (_inputData.Vertical != 0)
             {
                 Player.GetComponent<Animation>().Play("Run");
+                secondCamera.SetActive(false);
+                mainCamera.SetActive(true);
             }
             else //if(_inputData.Horizontal != 0)
             {
                 Player.GetComponent<Animation>().Play("Idle");
+                //mainCamera.SetActive(true);
+                //firstCamera.SetActive(false);
             }
         }
     }
