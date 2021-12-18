@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Stats;
 
 namespace PlayerInput
 {
@@ -13,11 +14,15 @@ namespace PlayerInput
         public string VerticalAxis;
         public float HorizontalSpeed;
         public float VerticalSpeed;
+        
 
         public void ProcessInput()
         {
-            Horizontal = Input.GetAxis(HorizontalAxis);
-            Vertical = Input.GetAxis(VerticalAxis);
+            if (!GeneralStats.isAnimOn)
+            { 
+                Horizontal = Input.GetAxis(HorizontalAxis);
+                Vertical = Input.GetAxis(VerticalAxis);
+            }
         }
     }
 }
